@@ -19,7 +19,7 @@ A group of friends near the Hungary-Romania border want to go to the cinema. You
 1. **Run it naively.** Ask your agent to follow `process.md` using `data/email-thread-0.txt`. No hints.
 2. **Check the output.** Open `output/plan.md`. Are the screening times real? Did it get who's coming right? Check against the cinema websites yourself.
 3. **Discuss.** What did it get right vs fabricate? Why? What's the risk?
-4. **Automate.** Ask the agent which steps could be replaced with scripts. Discuss, then let it build them in `scripts/`.
+4. **Automate.** Ask the agent which steps could be replaced with scripts. Discuss, then let it build them in `scripts/`. Ask the agent to modify the process to use the scripts. 
 5. **Run it again** with a harder email thread. Did the scripts help?
 
 
