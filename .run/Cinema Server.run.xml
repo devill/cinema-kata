@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Cinema Server" type="NodeJSConfigurationType" factoryName="Node.js">
+    <option name="NODE_INTERPRETER" value="C:\NodeJS\node.exe" />
+    <option name="NODE_OPTIONS" value="" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
+    <option name="JS_FILE" value="$PROJECT_DIR$/server/index.js" />
+    <option name="APPLICATION_PARAMETERS" value="" />
+    <option name="ENV_FILES" value="" />
+    <method v="2" />
+  </configuration>
+</component>
+

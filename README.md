@@ -8,11 +8,31 @@ A group of friends near the Hungary-Romania border want to go to the cinema. You
 
 - A coding agent (Claude Code, Cursor, etc.)
 - Node.js installed
-- Start the cinema server:
+- Install the server dependencies once:
+  ```powershell
+  npm --prefix .\server install
+  ```
+
+- Start the cinema server from the project root:
+  ```powershell
+  npm start
+  ```
+
+- Or start it directly from `server/`:
+  ```powershell
+  Set-Location .\server
+  npm start
+  ```
+  If you are using a Bash-style shell instead of Windows PowerShell:
   ```bash
-  cd server && npm install && node index.js
+  npm --prefix ./server install
+  npm start
   ```
   This runs three cinema websites on http://localhost:3000.
+
+- In IntelliJ-based IDEs, open the `cinema-kata` folder itself as the project root, make sure the Node.js interpreter is available, then use the shared run configuration named `Cinema Server` and click the Run button.
+
+- If the server does not start, check the Run tool window for a message such as `Port 3000 is already in use`.
 
 ## The Exercise
 

@@ -2,7 +2,7 @@ const express = require('express');
 const PDFDocument = require('pdfkit');
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 // ─── Fixture Data ───────────────────────────────────────────────────────────
 
@@ -644,6 +644,16 @@ app.get('/starlight-mako/programme/week-16', (_req, res) => {
 
 // ─── Start ──────────────────────────────────────────────────────────────────
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Cinema Kata server running at http://localhost:${PORT}`);
 });
+
+server.on('error', (error) => {
+  if (error.code === 'EADDRINUSE') {
+    console.error(`Port ${PORT} is already in use. Stop the other process or set PORT to a different value.`);
+    return;
+  }
+
+  console.error('Failed to start Cinema Kata server.', error);
+});
+

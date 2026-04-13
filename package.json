@@ -1,0 +1,9 @@
+{
+  "name": "cinema-kata",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix server install",
+    "start": "cd server && node index.js"
+  }
+}
+
