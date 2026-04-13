@@ -1,0 +1,13 @@
+{
+  "name": "cinema-kata-server",
+  "version": "1.0.0",
+  "description": "Three cinema websites for AI-assisted automation kata",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "pdfkit": "^0.15.0"
+  }
+}
